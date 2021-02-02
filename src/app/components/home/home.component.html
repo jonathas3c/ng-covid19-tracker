@@ -4,6 +4,36 @@
     <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered' [totalDeaths]='totalDeaths'></app-dashboard-card>
 </div>
 <hr>
+
+<div class="ui form">
+    <div class="inline fields">
+      <label for="fruit">Select case type:</label>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="c" name="fruit" checked="" tabindex="0" class="hidden">
+          <label>Confirmed</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="d" name="fruit" tabindex="0" class="hidden">
+          <label>Deaths</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="r" name="fruit" tabindex="0" class="hidden">
+          <label>Recovered</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" value="a" name="fruit" tabindex="0" class="hidden">
+          <label>Active</label>
+        </div>
+      </div>
+    </div>
+
 <div class="row">
     <div class="col">
         <google-chart [data]="pieChart"></google-chart>
